@@ -1,6 +1,6 @@
 import React from "react";
 import { Route,Routes } from "react-router-dom";
-import Login from "./common/login";
+import Login from "./common/Login";
 import NavBar from "./common/navBar";
 import Registration from "../components/common/Registration";
 import Viewusers from "../components/admin/Viewusers";

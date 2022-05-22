@@ -4,14 +4,6 @@ import AdashBoard from "./admin/aDashBoard";
 import CreateMarkingSchemes from "./admin/createMarkingS";
 
 
-
-
-
-
-
-
-
-
 const AdminApp =()=>{
 
     return(
