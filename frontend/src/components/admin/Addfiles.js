@@ -7,6 +7,7 @@ const Addfiles = () => {
         {
             name: '',
             description: '',
+            file: '',
         }
     )
 
@@ -21,11 +22,6 @@ const Addfiles = () => {
         e.preventDefault();
 
             const newitem = {...newFile};
-
-        //   const exercise = {
-        //     name: this.useState.name,
-        //     description: this.useState.description,
-        //     }
 
         axios.post('http://localhost:5000/adminfile/add', newitem)
              .then(res => {
@@ -56,6 +52,14 @@ const Addfiles = () => {
                 placeholder='description'
                 value= {newFile.description}
                 onChange={(e)=>formchange({description:e.target.value})}
+                />
+                <br/>
+            <input
+                type='file'
+                id = 'file'
+                placeholder='file'
+                value= {newFile.file}
+                onChange={(e)=>formchange({file:e.target.value})}
                 />
                 <br/>
             <input type='submit'/>    

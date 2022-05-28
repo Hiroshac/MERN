@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-
 const Schema = mongoose.Schema
 
 const adminfiles = new Schema(
@@ -11,7 +10,11 @@ const adminfiles = new Schema(
         description: {
              type:String,
           
-        }
+        },
+        filepdf: {
+            type:String,
+         
+       }
     }
 )
 
